@@ -67,11 +67,8 @@ def buy():
 
     username = os.environ.get('USERNAME')
     password = os.environ.get('PASSWORD')
-    #count = int(os.environ.get('COUNT'))
-    count = (os.environ.get('COUNT'))
+    count = int(os.environ.get('COUNT'))
     
-    print(username)
-    print(count)
     slack_webhook_url = os.environ.get('SLACK_WEBHOOK_URL') 
     discord_webhook_url = os.environ.get('DISCORD_WEBHOOK_URL')
     mode = "AUTO"
